@@ -14,7 +14,7 @@ class Calculator {
             $output = "Incorrect operator";
         } 
 
-    //calculations
+    //calculations 
 
         if ($operator == "+") {
             $output = $num1 + $num2;

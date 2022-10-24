@@ -36,16 +36,15 @@ $heading = "Add Names";
           $output;
       }
   ?>
- 
+
 
             <form method="POST">
                 <button type="submit" name="add" class="btn btn-primary" method="POST" >Add Name</button> 
                 <button type="submit" name="clear" class="btn btn-primary" method="POST">Clear Names</button>
-            </form>
+            
 
             <br></br>
 
-            <form action="Names.php" method="POST">
             <label for="names">Enter Name</label>
             <input type="text" class="form-control" id="name" name="name" value="">
             </form>
