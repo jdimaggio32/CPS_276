@@ -8,17 +8,12 @@ class DatabaseConn {
 
     try {
 
-      //$dbHost = 'localhost';
-      //$dbName = 'names';
-      //$dbUsr = 'root';
-      //$dbPass = 'password';
       $dbHost = 'localhost';
-      $dbName = 'jdimaggio';
-      $dbUsr = 'jdimaggio';
-      $dbPass = 'Gz74bbsadqfF';
+      $dbName = 'jdimaggio';//this will be your WCC username
+      $dbUsr = 'jdimaggio';//this will be your WCC username 
+      $dbPass = 'Gz74bbsadqfF';//this will be the password found in the video.
 
       $this->conn = new PDO('mysql:host=' . $dbHost . ';dbname=' . $dbName, $dbUsr, $dbPass);
-
       
       $this->conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false); /*THIS STOPS PDO FROM ADDING SINGLE QUOTES AROUND INTEGER VALUES.*/
       $this->conn->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);/* FORCES QUERIES TO BE BUFFERED IN MYSQL */
@@ -38,4 +33,3 @@ class DatabaseConn {
 
   }
 }
-?>
